@@ -5,7 +5,7 @@ class Tree:
         self.right = None
 
 class ArrayTree:
-    def __init__(self, arr):
+    def __init__(self):
         self.root = None
         self.children = []
 
