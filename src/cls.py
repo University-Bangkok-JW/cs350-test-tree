@@ -44,6 +44,12 @@ class ArrayTree:
         self.children[index] = data
         self.root = self._arrayToTree(0)
 
+    """
+    Prints the tree elements in inorder traversal (left, root, right).
+
+    Uses a helper function for recursion.
+    """
+
     def printInorder(self):
         def _inorder(node):
             if node:
@@ -55,6 +61,11 @@ class ArrayTree:
         _inorder(self.root)
         print()
 
+    """
+    Prints the tree elements in preorder traversal (root, left, right).
+
+    Uses a helper function for recursion.
+    """
     def printPreorder(self):
         def _preorder(node):
             if node:
@@ -66,6 +77,11 @@ class ArrayTree:
         _preorder(self.root)
         print()
 
+    """
+    Prints the tree elements in preorder traversal (root, left, right).
+
+    Uses a helper function for recursion.
+    """
     def printPostorder(self):
         def _postorder(node):
             if node:
